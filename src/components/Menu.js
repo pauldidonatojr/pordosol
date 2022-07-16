@@ -38,7 +38,7 @@ const Wrapper = styled.div`
     display: grid;
 
     height: 15vh;
-    width: 60vh;
+    width: 45vh;
     padding: 0.25rem;
   }
 
