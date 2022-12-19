@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+// import SingleItem from './SingleItem'
+import Button from '@mui/material/Button'
 const Menu = ({ items }) => {
   return (
     <Wrapper>
@@ -9,12 +12,36 @@ const Menu = ({ items }) => {
           return (
             <article key={id} className="menu-item">
               {/* <img src={img} alt={title} className="photo" /> */}
-              <div className="item-info">
+              <div
+                className="item-info"
+                style={{
+                  // border: '2px solid black',
+                  display: 'grid',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
                 <header>
                   <h4>{title}</h4>
                   <h4 className="price">${price}</h4>
                 </header>
+
                 <p className="item-text">{desc}</p>
+
+                <div
+                  style={{
+                    // border: '2px solid red',
+                    width: '250px',
+                    height: '30px',
+                    display: 'grid',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <Link to="https://ar.food2view.com/">
+                    <Button variant="contained">View in AR</Button>
+                  </Link>
+                </div>
               </div>
             </article>
           )
