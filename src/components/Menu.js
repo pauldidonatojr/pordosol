@@ -38,7 +38,7 @@ const Menu = ({ items }) => {
                     justifyContent: 'center',
                   }}
                 >
-                  <Link to="https://ar.food2view.com/">
+                  <Link to="https://ar.food2view.com/?Model=Meal%201/Por%20Do%20Sol">
                     <Button variant="contained">View in AR</Button>
                   </Link>
                 </div>
