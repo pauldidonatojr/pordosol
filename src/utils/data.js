@@ -6,30 +6,34 @@ const items = [
     price: 4,
     img: './images/item-1.jpeg',
     desc: `Iceburg Lettuce, Tomato and Cheese `,
+    model: 'Meal 1',
   },
   {
     id: 2,
     title: 'Camarão ao Alho',
     category: 'Appetizers',
     price: 14,
-    // img: './images/item-2.jpeg',
+    img: './images/item-2.jpeg',
     desc: `Shrimp Garlic Sauce`,
+    model: 'Meal 2',
   },
   {
     id: 3,
     title: 'Picadinho Misto',
     category: 'Appetizers',
     price: 19,
-    // img: './images/item-3.jpeg',
+    img: './images/item-3.jpeg',
     desc: `Pork Shrimp, Sausage and Calamari served with French Fries`,
+    model: 'Cupcake',
   },
   {
     id: 4,
     title: 'Ameijoas à Bulhão Pato',
     category: 'Appetizers',
     price: 15,
-    // img: './images/item-4.jpeg',
+    img: './images/item-4.jpeg',
     desc: `Littleneck Clams, Olive oil, Garlic, Cliantro and White Wine `,
+    model: 'Chiken Plate',
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ const items = [
     price: 15,
     // img: './images/item-5.jpeg',
     desc: `Fried Calamari wtih Marinara Sauce `,
+    model: 'Meatballs Plate',
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ const items = [
     price: 14,
     // img: './images/item-6.jpeg',
     desc: `Homemade Sausage Grilled in Portuguese Grappa`,
+    model: 'Salmon Tartine',
   },
   {
     id: 7,
@@ -54,6 +60,7 @@ const items = [
     price: 11,
     // img: './images/item-7.jpeg',
     desc: `Fried Chicken on the Bone`,
+    model: 'Wood Board Rib',
   },
   {
     id: 8,
@@ -62,6 +69,7 @@ const items = [
     price: 11,
     // img: './images/item-8.jpeg',
     desc: `Served with French Fries and Honey Mustard `,
+    model: 'Joia Ribs',
   },
   {
     id: 9,
@@ -70,6 +78,7 @@ const items = [
     price: 10,
     // img: './images/item-9.jpeg',
     desc: `Served with Homemade Tomato Sauce`,
+    model: 'Meal 1',
   },
   {
     id: 10,
@@ -78,6 +87,7 @@ const items = [
     price: 23,
     // img: './images/item-9.jpeg',
     desc: `Codfish Cakes, Shrimp Puffs, Fried Pork Belly, Fried Chicken on the bone and Yucca Fries`,
+    model: 'Meal 1',
   },
   {
     id: 11,
@@ -86,6 +96,7 @@ const items = [
     price: 20,
     // img: './images/item-9.jpeg',
     desc: `Beef Cubes with French Fries and Sautéed Onions`,
+    model: 'Meal 1',
   },
   {
     id: 12,
@@ -94,6 +105,7 @@ const items = [
     price: 22,
     img: './images/item-9.jpeg',
     desc: `Top Rump Cubes, Melted Cheese and Yucca Fries`,
+    model: 'Meal 1',
   },
   {
     id: 13,
@@ -102,6 +114,7 @@ const items = [
     price: 13.5,
     img: './images/item-9.jpeg',
     desc: `Shrimp Puffs`,
+    model: 'Meal 1',
   },
   {
     id: 14,
@@ -110,6 +123,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Codfish Cakes `,
+    model: 'Meal 1',
   },
   {
     id: 15,
@@ -118,6 +132,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Linquiça Calabresa e de Frango com Mozarella, Mandioca frita, Farafa e Vinagrete`,
+    model: 'Meal 1',
   },
   {
     id: 16,
@@ -126,6 +141,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Whole Orata Grilled or Fried, Boiled Potatoes, Vegetables`,
+    model: 'Meal 1',
   },
   {
     id: 17,
@@ -134,6 +150,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Mixed Shelfish in Parsley in White Wine or Tomato Sauce`,
+    model: 'Meal 1',
   },
   {
     id: 18,
@@ -142,6 +159,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Mixed Shelfish in Rice, Valenciana served with Seafood and Meat`,
+    model: 'Meal 1',
   },
   {
     id: 19,
@@ -150,6 +168,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Shrimp in Saffron Rice`,
+    model: 'Meal 1',
   },
   {
     id: 20,
@@ -158,6 +177,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Broiled Salmon served with Boiled Potatoes and Vegetables`,
+    model: 'Meal 1',
   },
   {
     id: 21,
@@ -166,6 +186,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Grilled Salmon with Shrimp, Boiled Potatoes and Vegetables`,
+    model: 'Meal 1',
   },
   {
     id: 22,
@@ -174,6 +195,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Colossal Prawns on the Shell, Garlic, White Wine, Spicy Touch`,
+    model: 'Meal 1',
   },
   {
     id: 23,
@@ -182,6 +204,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Grilled Salted Cod Fish on the Bone, Boiled Potato and Vegetables`,
+    model: 'Meal 1',
   },
   {
     id: 24,
@@ -190,6 +213,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Mixed Shellfish in Rice`,
+    model: 'Meal 1',
   },
   {
     id: 25,
@@ -198,6 +222,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Grilled Filet Mignon, Madeira Wine Sauce, Rice, Beans and French Fries`,
+    model: 'Meal 1',
   },
   {
     id: 26,
@@ -206,6 +231,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `N.Y. Strip Steak w/Egg and slice of Ham,Rice,Beans and French Fries`,
+    model: 'Meal 1',
   },
   {
     id: 27,
@@ -214,6 +240,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `N.Y. Strip Steak wtih Shrimp in Garlic Sauce, Rice, Beans and French Fries`,
+    model: 'Meal 1',
   },
   {
     id: 28,
@@ -222,6 +249,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Grilled Strip Loin, Rice, Beans and French Fries `,
+    model: 'Meal 1',
   },
   {
     id: 29,
@@ -230,6 +258,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Famous Pork Cubes and Fried Cubed Potatoes with Clams`,
+    model: 'Meal 1',
   },
   {
     id: 30,
@@ -238,6 +267,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Grilled Short Ribs, Rice, Beans and French Friest`,
+    model: 'Meal 1',
   },
   {
     id: 31,
@@ -246,6 +276,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Small Strip Loin, Garlic Sauce, Egg on top and Spanish Potatoes`,
+    model: 'Meal 1',
   },
   {
     id: 32,
@@ -254,6 +285,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Grilled Skirt Steak w/ 2 Eggs, Rice, Beans and French Fries`,
+    model: 'Meal 1',
   },
   {
     id: 33,
@@ -262,6 +294,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Grilled Top Sirloin Cap Rice, Beans and French Fries`,
+    model: 'Meal 1',
   },
   {
     id: 34,
@@ -270,6 +303,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Grilled T-Bone Steak with Rice, Beans and French Fries`,
+    model: 'Meal 1',
   },
   {
     id: 35,
@@ -278,6 +312,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Grilled Pork Chops, Rice, Beans and French Fries`,
+    model: 'Meal 1',
   },
   {
     id: 36,
@@ -286,6 +321,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Salada`,
+    model: 'Meal 1',
   },
   {
     id: 37,
@@ -294,6 +330,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Vegetais`,
+    model: 'Meal 1',
   },
   {
     id: 38,
@@ -302,6 +339,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Arroz`,
+    model: 'Meal 1',
   },
   {
     id: 39,
@@ -310,6 +348,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Feijão`,
+    model: 'Meal 1',
   },
   {
     id: 40,
@@ -318,6 +357,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Batatas Fritas`,
+    model: 'Meal 1',
   },
   {
     id: 41,
@@ -326,6 +366,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Batata Espanhola`,
+    model: 'Meal 1',
   },
   {
     id: 42,
@@ -334,6 +375,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Batata Cozida`,
+    model: 'Meal 1',
   },
   {
     id: 43,
@@ -342,6 +384,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Grilled Sirloin Steak, Mozzarella Cheese and French Fries `,
+    model: 'Meal 1',
   },
   {
     id: 44,
@@ -350,6 +393,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Grilled Sirloin Steak with French Fries `,
+    model: 'Meal 1',
   },
   {
     id: 45,
@@ -358,6 +402,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Grilled or Breaded Chicken Breast served with French Fries `,
+    model: 'Meal 1',
   },
   {
     id: 46,
@@ -366,6 +411,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     desc: `Portuguese famous "Febras". Pork Cutlets Fried or Grilled `,
+    model: 'Meal 1',
   },
   {
     id: 47,
@@ -373,55 +419,61 @@ const items = [
     category: 'House Speciality Drinks',
     price: 16.99,
     // img: './images/item-9.jpeg',
-    // desc: `Mandioca`,
+    desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 48,
     title: 'Caipirinha w/ Passion Fruit',
     category: 'House Speciality Drinks',
     price: 16.99,
-    // img: './images/item-9.jpeg',
-    // desc: `Mandioca`,
+    img: './images/item-9.jpeg',
+    desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 49,
     title: 'Caipirinha w/ Pineapple',
     category: 'House Speciality Drinks',
     price: 16.99,
-    // img: './images/item-9.jpeg',
-    // desc: `Mandioca`,
+    img: './images/item-9.jpeg',
+    desc: `Mandioca`,
   },
   {
     id: 50,
     title: 'Large Sangria',
     category: 'House Speciality Drinks',
     price: 16.99,
-    // img: './images/item-9.jpeg',
-    // desc: `Mandioca`,
+    img: './images/item-9.jpeg',
+    desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 51,
     title: 'Small Sangria',
     category: 'House Speciality Drinks',
     price: 16.99,
-    // img: './images/item-9.jpeg',
-    // desc: `Mandioca`,
+    img: './images/item-9.jpeg',
+    desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 52,
     title: 'Margarita',
     category: 'House Speciality Drinks',
     price: 16.99,
-    // img: './images/item-9.jpeg',
-    // desc: `Mandioca`,
+    img: './images/item-9.jpeg',
+    desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 53,
     title: 'Malibu Bay Breeze',
     category: 'House Speciality Drinks',
     price: 16.99,
-    // img: './images/item-9.jpeg',
-    // desc: `Mandioca`,
+    img: './images/item-9.jpeg',
+    desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 54,
@@ -430,6 +482,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 55,
@@ -438,6 +491,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 56,
@@ -446,6 +500,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 57,
@@ -454,6 +509,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 58,
@@ -462,6 +518,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 59,
@@ -470,6 +527,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 60,
@@ -478,6 +536,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 61,
@@ -486,6 +545,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 62,
@@ -494,6 +554,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 63,
@@ -502,6 +563,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 64,
@@ -510,6 +572,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 65,
@@ -518,6 +581,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 66,
@@ -526,6 +590,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 67,
@@ -534,6 +599,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 68,
@@ -542,6 +608,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 69,
@@ -550,6 +617,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 70,
@@ -558,6 +626,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 71,
@@ -566,6 +635,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 72,
@@ -574,6 +644,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 73,
@@ -582,6 +653,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 74,
@@ -590,6 +662,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 75,
@@ -598,6 +671,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 76,
@@ -606,6 +680,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 77,
@@ -614,6 +689,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 78,
@@ -622,6 +698,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 79,
@@ -630,6 +707,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 80,
@@ -638,6 +716,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 81,
@@ -646,6 +725,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 82,
@@ -654,6 +734,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 83,
@@ -662,6 +743,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 84,
@@ -670,6 +752,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 85,
@@ -678,6 +761,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 86,
@@ -686,6 +770,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
   {
     id: 87,
@@ -694,6 +779,7 @@ const items = [
     price: 16.99,
     // img: './images/item-9.jpeg',
     // desc: `Mandioca`,
+    model: 'Meal 1',
   },
 ]
 export default items

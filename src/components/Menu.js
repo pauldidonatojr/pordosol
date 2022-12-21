@@ -3,44 +3,64 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 // import SingleItem from './SingleItem'
 import Button from '@mui/material/Button'
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { purple } from '@mui/material/colors';
+import ViewInArIcon from '@mui/icons-material/ViewInAr'
+
+
+const theme = createTheme({
+  palette: {
+    neutral: {
+      main: '#c59d5f',
+      contrastText: '#fff',
+    },
+  },
+});
+
 const Menu = ({ items }) => {
   return (
     <Wrapper>
-      <div className="section-center">
+      <div className="sectionCenter">
         {items.map((menuItem) => {
-          const { id, title, img, desc, price } = menuItem
+          const { id, title, img, desc, price, model } = menuItem
           return (
-            <article key={id} className="menu-item">
-              {/* <img src={img} alt={title} className="photo" /> */}
-              <div
-                className="item-info"
-                style={{
-                  // border: '2px solid black',
-                  display: 'grid',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                }}
-              >
-                <header>
-                  <h4>{title}</h4>
+            <article key={id} className="product-card">
+              <img className="card-image" src={img} />
+              <div className="overlay-product" />
+              <div className="product-details">
+                <header className='product-header'>
+                  <h4 style={{ color: 'white' }}>{title}</h4>
                   <h4 className="price">${price}</h4>
                 </header>
 
-                <p className="item-text">{desc}</p>
+                <div className='description-holder'>
+                  <p className="item-text">{desc}</p>
+                </div>
+
 
                 <div
                   style={{
                     // border: '2px solid red',
-                    width: '250px',
+                    width: '100%',
                     height: '30px',
                     display: 'grid',
                     alignItems: 'center',
                     justifyContent: 'center',
                   }}
                 >
-                  <Link to="https://ar.food2view.com/?Model=Meal%201/Por%20Do%20Sol">
-                    <Button variant="contained">View in AR</Button>
-                  </Link>
+                  <ThemeProvider theme={theme}>
+                    <Button color="neutral" variant="contained"
+                      onClick={function (event) {
+                        var win = window.open(
+                          'https://ar.food2view.com/ ' + '?Model=' + model + '/' + 'Por Do Sol',
+                          '_blank'
+                        )
+                        win.focus()
+                      }}>
+                      Try in AR
+                      <ViewInArIcon></ViewInArIcon>
+                    </Button>
+                  </ThemeProvider>
                 </div>
               </div>
             </article>
@@ -52,32 +72,81 @@ const Menu = ({ items }) => {
 }
 
 const Wrapper = styled.div`
-  .section-center {
-    width: 90vw;
-    margin: 0 auto;
-    max-width: 1170px;
+position: absolute;
+left: 0;
+width: 100%;
+font-family: "Roboto Condensed", sans-serif;
+
+  .sectionCenter {
     display: grid;
-    gap: 3rem 2rem;
     justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    background-color: var(--blue);
+    color: cornsilk;
   }
 
-  .menu-item {
+  .product-card {
     display: grid;
-
-    height: 15vh;
-    width: 45vh;
-    padding: 0.25rem;
+    height: 40vh;
+    width: 50vh;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    /* transition: all 0.7s cubic-bezier(0.895, 0.03, 0.685, 0.22); */
+    transition: box-shadow 0.3s;
+    &:hover{
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08),
+      0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14); 
+    }
   }
 
-  .photo {
-    object-fit: cover;
-    height: 200px;
-    width: 100%;
-    border: 0.25rem solid var(--clr-gold);
+  .card-image{
+    object-fit:cover;
+    height: 40vh;
+    width: 50vh;
     border-radius: var(--radius);
     display: block;
+    position: absolute;
   }
 
+  
+  .product-details{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      height: 40vh;
+      width: 50vh;
+      position: relative;
+      transition: backdrop-filter 0.3s;
+      border-radius: var(--radius);
+  }
+
+
+  .overlay-product{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      z-index: 1;
+      height: 40vh;
+      width: 50vh;
+      position: absolute;
+      opacity: 0.5;
+      border-radius: var(--radius);
+  }
+
+  .product-details:hover{
+    backdrop-filter: blur(5px);
+    }
+
+  .product-header{
+      width: 100%;
+      display: grid;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+
+  }
   .item-info header {
     display: flex;
     justify-content: space-between;
@@ -89,12 +158,24 @@ const Wrapper = styled.div`
   }
 
   .price {
+    position: relative;
+    text-align: center;
     color: var(--clr-gold);
   }
 
+  .description-holder {
+    position: relative;
+    display: inline;
+    padding: 1rem;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
   .item-text {
-    margin-bottom: 0;
-    padding-top: 1rem;
+    color: white;
   }
 
   @media (min-width: 576px) {
