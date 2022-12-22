@@ -20,6 +20,7 @@ const Hero = () => {
 
   return (
     <Wrapper>
+      
       <section className="menu section">
         <div className="title">
           <h2>Por Do Sol</h2>
@@ -33,6 +34,7 @@ const Hero = () => {
 }
 
 const Wrapper = styled.div`
+   
   .menu {
     padding: 5rem 0;
   }
